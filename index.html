@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=device-width,initial-scale=1.8">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Travel Landing Page</title>
+    </head>
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Mr Modern</h2>
+      <div class="toggle"></div>
+      
+    </header>
+        <video src="Pexels Videos 2169880.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+             <div class="text">
+            <h2>Never Stop To </h2> 
+             <h3>Exploring The World</h3>
+             <p>Burhanpur is a city in the Indian state of Madhya Pradesh. 
+                 It is the administrative seat of Burhanpur District. 
+                 It is situated on the north bank of the Tapti River 
+                 and 340 kilometres southwest of the state's capital 
+                 city of Bhopal. The city is a Municipal Corporation..</p>
+             <a href="#">Explore</a>
+            </div>
+            <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+             </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <script>
+       const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+ 
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="Mega"
+    agent-id="19b63631-ce80-4de1-a862-9bd5fdee124d"
+    language-code="en"
+  ></df-messenger
+  >
+</body>
+</html>
